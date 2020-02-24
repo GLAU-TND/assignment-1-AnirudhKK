@@ -59,7 +59,7 @@ public class MyMain
                         System.out.println("");
                         System.out.print("Email: ");
                         String e=sc.next();
-                        String regxEmail="\\w+\\.*@\\w+\\.\\w+";
+                        String regxEmail="\\w+.*@\\w+\\.\\w+";
                         while(Pattern.compile(regxEmail).matcher(e).matches()!=true)
                         {
                             System.out.println("Invalid email! Try again: ");
